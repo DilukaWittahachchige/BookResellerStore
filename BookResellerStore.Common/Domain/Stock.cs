@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace BookResellerStore.Common.Domain
 {
-    class Stock
+    public class Stock
     {
+        public int StockId { get; set; }
+        public string IsbnCode { get; set; }
+        public double Quantity { get; set; }
+        public int StoreId { get; set; }
+        public int BookId { get; set; }
+        public int CreatedUserId { get; set; }
+        public DateTime CreatedDateTime { get; set; }
+        public int LastUpdatedUserId { get; set; }
+        public DateTime LastUpdatedDateTime { get; set; }
     }
 }

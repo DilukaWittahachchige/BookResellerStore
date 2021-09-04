@@ -5,13 +5,27 @@ VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookResellerStore.API", "BookResellerStore.API\BookResellerStore.API.csproj", "{E43B98AB-AE53-44E7-9027-02556564B58E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookResellerStore.DAL", "BookResellerStore.DAL\BookResellerStore.DAL.csproj", "{E711C6E5-282D-49C8-9A16-87911ED7ECCB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IBookResellerStoreDataAccess", "BookResellerStore.DAL\IBookResellerStoreDataAccess.csproj", "{E711C6E5-282D-49C8-9A16-87911ED7ECCB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookResellerStore.BLL", "BookResellerStore.BLL\BookResellerStore.BLL.csproj", "{1674A3DD-EA94-4C13-94E5-BC07CA90951D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookResellerStoreBusinessServices", "BookResellerStore.BLL\BookResellerStoreBusinessServices.csproj", "{1674A3DD-EA94-4C13-94E5-BC07CA90951D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookResellerStore.Common", "BookResellerStore.Common\BookResellerStore.Common.csproj", "{6CD8ADA4-D62A-427A-AE46-31D11197B359}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookResellerStoreCommon", "BookResellerStore.Common\BookResellerStoreCommon.csproj", "{6CD8ADA4-D62A-427A-AE46-31D11197B359}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookResellerStore.Test", "BookResellerStore.Test\BookResellerStore.Test.csproj", "{AEC2EE84-A974-4057-AC53-799093E9BBE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BLL", "BLL", "{202B81FC-C5B2-4B43-8ABF-439A3FC62DAD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{0163007E-B219-48BF-9E1A-51EE2E916B7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{3D2BF3BF-D809-41EB-8248-DC339165E0FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{411F9AB0-1D6D-4155-B890-938F17429508}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookResellerStoreDataAccess", "BookResellerStoreDataAccess\BookResellerStoreDataAccess.csproj", "{77CD42F1-1BC9-4B1F-8C4A-186E0C41F129}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBookResellerStoreCommon", "IBookResellerStoreCommon\IBookResellerStoreCommon.csproj", "{B375D541-7263-433F-A34A-B5468E833DFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBookResellerStoreBusinessServices", "IBookResellerStoreBusinessServices\IBookResellerStoreBusinessServices.csproj", "{04624454-A7F3-4E83-BDD4-BAB2F76FBE2A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,9 +53,30 @@ Global
 		{AEC2EE84-A974-4057-AC53-799093E9BBE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEC2EE84-A974-4057-AC53-799093E9BBE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEC2EE84-A974-4057-AC53-799093E9BBE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77CD42F1-1BC9-4B1F-8C4A-186E0C41F129}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77CD42F1-1BC9-4B1F-8C4A-186E0C41F129}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77CD42F1-1BC9-4B1F-8C4A-186E0C41F129}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77CD42F1-1BC9-4B1F-8C4A-186E0C41F129}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B375D541-7263-433F-A34A-B5468E833DFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B375D541-7263-433F-A34A-B5468E833DFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B375D541-7263-433F-A34A-B5468E833DFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B375D541-7263-433F-A34A-B5468E833DFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04624454-A7F3-4E83-BDD4-BAB2F76FBE2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04624454-A7F3-4E83-BDD4-BAB2F76FBE2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04624454-A7F3-4E83-BDD4-BAB2F76FBE2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04624454-A7F3-4E83-BDD4-BAB2F76FBE2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E711C6E5-282D-49C8-9A16-87911ED7ECCB} = {0163007E-B219-48BF-9E1A-51EE2E916B7E}
+		{1674A3DD-EA94-4C13-94E5-BC07CA90951D} = {202B81FC-C5B2-4B43-8ABF-439A3FC62DAD}
+		{6CD8ADA4-D62A-427A-AE46-31D11197B359} = {411F9AB0-1D6D-4155-B890-938F17429508}
+		{AEC2EE84-A974-4057-AC53-799093E9BBE4} = {3D2BF3BF-D809-41EB-8248-DC339165E0FA}
+		{77CD42F1-1BC9-4B1F-8C4A-186E0C41F129} = {0163007E-B219-48BF-9E1A-51EE2E916B7E}
+		{B375D541-7263-433F-A34A-B5468E833DFA} = {411F9AB0-1D6D-4155-B890-938F17429508}
+		{04624454-A7F3-4E83-BDD4-BAB2F76FBE2A} = {202B81FC-C5B2-4B43-8ABF-439A3FC62DAD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A374BC2A-A1B1-4DA7-93EE-C25F246DB77B}
