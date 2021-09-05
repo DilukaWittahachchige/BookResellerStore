@@ -5,13 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Cache\Memory\" />
+    <Folder Include="Cache\Redis\" />
     <Folder Include="Logger\" />
-    <Folder Include="Cache\" />
     <Folder Include="Extensions\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="BenchmarkDotNet" Version="0.13.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
     <PackageReference Include="Roslynator.Analyzers" Version="3.2.2">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
