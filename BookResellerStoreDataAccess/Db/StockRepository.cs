@@ -11,9 +11,23 @@ namespace BookResellerStoreDataAccess
 {
     public class StockRepository : IStockRepository
     {
+        /// <summary>
+        /// Load All stocks 
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<Stock> LoadAll()
         {
             return DummyDataModel.Stocks;
+        }
+
+        /// <summary>
+        /// Stock info by Id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public Stock LoadById(int id)
+        {
+            return DummyDataModel.Stocks.FirstOrDefault(x => x.Id == id);
         }
     }
 }

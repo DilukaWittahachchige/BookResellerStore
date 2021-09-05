@@ -15,5 +15,10 @@ namespace BookResellerStoreDataAccess
         {
             return DummyDataModel.Stores;
         }
+
+        public Store LoadById(int id)
+        {
+            return DummyDataModel.Stores.FirstOrDefault(x => x.Id == id);
+        }
     }
 }

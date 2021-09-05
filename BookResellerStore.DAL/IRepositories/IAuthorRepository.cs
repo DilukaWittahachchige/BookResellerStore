@@ -1,4 +1,4 @@
-﻿using BookResellerStore.Common.Domain;
+﻿using BookResellerStoreCommon.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace IBookResellerStoreDataAccess.IRepositories
 {
-    public interface IPriceRepository : IBaseRepository<Price>
+    public interface IAuthorRepository : IBaseRepository<Auther>
     {
-        IEnumerable<Price> LoadByBookId(int bookId);
+
     }
 }

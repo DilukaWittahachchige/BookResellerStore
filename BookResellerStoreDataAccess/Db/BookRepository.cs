@@ -17,6 +17,12 @@ namespace BookResellerStoreDataAccess
         {
             return DummyDataModel.Books;
         }
+
+        public Book LoadById(int id)
+        {
+            return DummyDataModel.Books.FirstOrDefault(x => x.Id == id);
+        }
+
         public IEnumerable<Book> LoadByName(string searchString)
         {
             return DummyDataModel.Books.Where(x => x.BookName.Contains(searchString));

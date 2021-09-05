@@ -8,7 +8,7 @@ namespace BookResellerStore.Common.Domain
 {
     public class Stock
     {
-        public int StockId { get; set; }
+        public int Id { get; set; }
         public double Quantity { get; set; }
         public int StoreId { get; set; }
         public int BookId { get; set; }

@@ -8,7 +8,7 @@ namespace BookResellerStore.Common.Domain
 {
     public class Order
     {
-        public int OrderId { get; set; }
+        public int Id { get; set; }
         public int BookId { get; set; }
         public string OrderStatus { get; set; }
         public bool IsDeleted { get; set; }

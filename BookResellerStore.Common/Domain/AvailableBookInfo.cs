@@ -12,6 +12,6 @@ namespace BookResellerStoreCommon.Domain
         public string BookName { get; set; }
         public string AutherName { get; set; }
         public Dictionary<string, double> PriceRange { get; set; }
-        public int stock { get; set; }
+        public double stock { get; set; }
     }
 }

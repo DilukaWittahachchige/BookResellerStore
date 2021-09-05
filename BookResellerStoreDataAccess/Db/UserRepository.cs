@@ -9,11 +9,16 @@ using System.Threading.Tasks;
 
 namespace BookResellerStoreDataAccess
 {
-    public class UserRepository: IUserRepository
+    public class UserRepository : IUserRepository
     {
         public IEnumerable<User> LoadAll()
         {
             return DummyDataModel.Users;
+        }
+
+        public User LoadById(int id)
+        {
+            return DummyDataModel.Users.FirstOrDefault(x => x.Id == id);
         }
     }
 }

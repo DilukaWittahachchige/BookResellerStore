@@ -40,7 +40,7 @@ namespace BookResellerStoreCommon.Dummy
         {
             var dummyBookOne = new Book()
             {
-                BookId = 1,
+                Id = 1,
                 IsbnCode = "500-3-16-148410-0",
                 AutherId = 1,
                 BookName = "Abc_Story",
@@ -54,7 +54,7 @@ namespace BookResellerStoreCommon.Dummy
 
             var dummyBookTwo = new Book()
             {
-                BookId = 2,
+                Id = 2,
                 IsbnCode = "600-3-16-148410-0",
                 AutherId = 4,
                 BookName = "Aww_Story",
@@ -68,7 +68,7 @@ namespace BookResellerStoreCommon.Dummy
 
             var dummyBookThree = new Book()
             {
-                BookId = 3,
+                Id = 3,
                 IsbnCode = "100-3-16-148410-0",
                 AutherId = 1,
                 BookName = "Avv_Story",
@@ -82,7 +82,7 @@ namespace BookResellerStoreCommon.Dummy
 
             var dummyBookFour = new Book()
             {
-                BookId = 4,
+                Id = 4,
                 IsbnCode = "700-3-16-148410-0",
                 AutherId = 2,
                 BookName = "Acc_Story",
@@ -96,7 +96,7 @@ namespace BookResellerStoreCommon.Dummy
 
             var dummyBookFive = new Book()
             {
-                BookId = 5,
+                Id = 5,
                 IsbnCode = "900-3-16-678410-0",
                 AutherId = 4,
                 BookName = "Abcd_Story",
@@ -199,7 +199,7 @@ namespace BookResellerStoreCommon.Dummy
         {
             var dummyPriceOne = new Price()
             {
-                PriceId = 1,
+                Id = 1,
                 BookPrice = 20,
                 Discount = 10,
                 StoreId = 1,
@@ -214,7 +214,7 @@ namespace BookResellerStoreCommon.Dummy
 
             var dummyPriceTwo = new Price()
             {
-                PriceId = 2,
+                Id = 2,
                 BookPrice = 18,
                 Discount = 10,
                 StoreId = 2,
@@ -229,7 +229,7 @@ namespace BookResellerStoreCommon.Dummy
 
             var dummyPriceThree = new Price()
             {
-                PriceId = 3,
+                Id = 3,
                 BookPrice = 25,
                 Discount = 10,
                 StoreId = 1,
@@ -244,7 +244,7 @@ namespace BookResellerStoreCommon.Dummy
 
             var dummyPriceFour = new Price()
             {
-                PriceId = 4,
+                Id = 4,
                 BookPrice = 26,
                 Discount = 10,
                 StoreId = 2,
@@ -259,7 +259,7 @@ namespace BookResellerStoreCommon.Dummy
 
             var dummyPriceFive = new Price()
             {
-                PriceId = 5,
+                Id = 5,
                 BookPrice = 32,
                 Discount = 10,
                 StoreId = 1,
@@ -274,11 +274,71 @@ namespace BookResellerStoreCommon.Dummy
 
             var dummyPriceSix = new Price()
             {
-                PriceId = 6,
+                Id = 6,
                 BookPrice = 38,
                 Discount = 10,
                 StoreId = 2,
                 BookId = 4,
+                CurrencyCode = "SGD",
+                IsDeleted = false,
+                CreatedUserId = 1,
+                CreatedDateTime = DateTime.Now,
+                LastUpdatedUserId = 1,
+                LastUpdatedDateTime = DateTime.Now,
+            };
+
+            var dummyPriceSeven = new Price()
+            {
+                Id = 7,
+                BookPrice = 36,
+                Discount = 10,
+                StoreId = 1,
+                BookId = 5,
+                CurrencyCode = "SGD",
+                IsDeleted = false,
+                CreatedUserId = 1,
+                CreatedDateTime = DateTime.Now,
+                LastUpdatedUserId = 1,
+                LastUpdatedDateTime = DateTime.Now,
+            };
+
+            var dummyPriceEight = new Price()
+            {
+                Id = 8,
+                BookPrice = 28,
+                Discount = 10,
+                StoreId = 2,
+                BookId = 5,
+                CurrencyCode = "SGD",
+                IsDeleted = false,
+                CreatedUserId = 1,
+                CreatedDateTime = DateTime.Now,
+                LastUpdatedUserId = 1,
+                LastUpdatedDateTime = DateTime.Now,
+            };
+
+            var dummyPriceNine = new Price()
+            {
+                Id = 9,
+                BookPrice = 26,
+                Discount = 10,
+                StoreId = 1,
+                BookId = 1,
+                CurrencyCode = "SGD",
+                IsDeleted = false,
+                CreatedUserId = 1,
+                CreatedDateTime = DateTime.Now,
+                LastUpdatedUserId = 1,
+                LastUpdatedDateTime = DateTime.Now,
+            };
+
+            var dummyPriceTen = new Price()
+            {
+                Id = 10,
+                BookPrice = 28,
+                Discount = 10,
+                StoreId = 2,
+                BookId = 1,
                 CurrencyCode = "SGD",
                 IsDeleted = false,
                 CreatedUserId = 1,
@@ -294,6 +354,10 @@ namespace BookResellerStoreCommon.Dummy
             allPrices.Add(dummyPriceFour);
             allPrices.Add(dummyPriceFive);
             allPrices.Add(dummyPriceSix);
+            allPrices.Add(dummyPriceSeven);
+            allPrices.Add(dummyPriceEight);
+            allPrices.Add(dummyPriceNine);
+            allPrices.Add(dummyPriceTen);
 
             return allPrices;
         }
@@ -302,7 +366,7 @@ namespace BookResellerStoreCommon.Dummy
         {
             var dummyStockOne = new Stock()
             {
-                StockId = 1,
+                Id = 1,
                 Quantity = 10,
                 StoreId = 1,
                 BookId = 1,
@@ -315,7 +379,7 @@ namespace BookResellerStoreCommon.Dummy
 
             var dummyStockTwo = new Stock()
             {
-                StockId = 2,
+                Id = 2,
                 Quantity = 2,
                 StoreId = 2,
                 BookId = 1,
@@ -328,7 +392,7 @@ namespace BookResellerStoreCommon.Dummy
 
             var dummyStockThree = new Stock()
             {
-                StockId = 3,
+                Id = 3,
                 Quantity = 6,
                 StoreId = 1,
                 BookId = 2,
@@ -341,7 +405,7 @@ namespace BookResellerStoreCommon.Dummy
 
             var dummyStockFour = new Stock()
             {
-                StockId = 4,
+                Id = 4,
                 Quantity = 2,
                 StoreId = 2,
                 BookId = 2,
@@ -354,7 +418,7 @@ namespace BookResellerStoreCommon.Dummy
 
             var dummyStockFive = new Stock()
             {
-                StockId = 5,
+                Id = 5,
                 Quantity = 1,
                 StoreId = 1,
                 BookId = 3,
@@ -367,7 +431,7 @@ namespace BookResellerStoreCommon.Dummy
 
             var dummyStockSix = new Stock()
             {
-                StockId = 6,
+                Id = 6,
                 Quantity = 20,
                 StoreId = 2,
                 BookId = 3,
@@ -393,7 +457,7 @@ namespace BookResellerStoreCommon.Dummy
         {
             var dummyUserOne = new User()
             {
-                UserId = 1,
+                Id = 1,
                 UserName = "SystemAdmin",
                 PhoneNumner = "+6543213089",
                 Address = "blk 234,st12,Jurong East,Singapore,345213",
@@ -409,7 +473,7 @@ namespace BookResellerStoreCommon.Dummy
 
             var dummyUserTwo = new User()
             {
-                UserId = 2,
+                Id = 2,
                 UserName = "Customer1",
                 PhoneNumner = "+6543213089",
                 Address = "blk 124,st8,Jurong East,Singapore,349913",
@@ -425,7 +489,7 @@ namespace BookResellerStoreCommon.Dummy
 
             var dummyUserThree = new User()
             {
-                UserId = 3,
+                Id = 3,
                 UserName = "Customer2",
                 PhoneNumner = "+6543213089",
                 Address = "blk 233,st10,Jurong East,Singapore,777213",
@@ -441,7 +505,7 @@ namespace BookResellerStoreCommon.Dummy
 
             var dummyUserFour = new User()
             {
-                UserId = 4,
+                Id = 4,
                 UserName = "ShopOwner1",
                 PhoneNumner = "+6577713089",
                 Address = "blk 233,st10,Jurong East,Singapore,777213",
@@ -457,7 +521,7 @@ namespace BookResellerStoreCommon.Dummy
 
             var dummyUserFive = new User()
             {
-                UserId = 5,
+                Id = 5,
                 UserName = "ShopOwner2",
                 PhoneNumner = "+6588813089",
                 Address = "blk 213,st10,Jurong East,Singapore,897213",
@@ -485,7 +549,7 @@ namespace BookResellerStoreCommon.Dummy
         {
             var dummyStoreOne = new Store()
             {
-                StoreId = 1,
+                Id = 1,
                 OwnerUserId = 4,
                 StoreName = "ABC-Store",
                 PhoneNumner = "+6578542019",
@@ -503,7 +567,7 @@ namespace BookResellerStoreCommon.Dummy
 
             var dummyStoreTwo = new Store()
             {
-                StoreId = 2,
+                Id = 2,
                 OwnerUserId = 5,
                 StoreName = "XYZ-Store",
                 PhoneNumner = "+6578542019",
@@ -530,7 +594,7 @@ namespace BookResellerStoreCommon.Dummy
         {
             var dummyOrderOne = new Order()
             {
-                OrderId = 1,
+                Id = 1,
                 BookId = 1,
                 OrderStatus = OrderStatus.Delivered.ToString(),
                 IsDeleted = false,
@@ -542,7 +606,7 @@ namespace BookResellerStoreCommon.Dummy
 
             var dummyOrderTwo = new Order()
             {
-                OrderId = 2,
+                Id = 2,
                 BookId = 1,
                 OrderStatus = OrderStatus.Delivered.ToString(),
                 IsDeleted = false,
@@ -554,7 +618,7 @@ namespace BookResellerStoreCommon.Dummy
 
             var dummyOrderThree = new Order()
             {
-                OrderId = 3,
+                Id = 3,
                 BookId = 2,
                 OrderStatus = OrderStatus.Paid.ToString(),
                 IsDeleted = false,

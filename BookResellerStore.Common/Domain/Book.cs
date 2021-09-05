@@ -8,7 +8,7 @@ namespace BookResellerStore.Common.Domain
 {
     public class Book
     {
-        public int BookId { get; set; }
+        public int Id { get; set; }
         public string IsbnCode { get; set; }
         public int AutherId { get; set; }
         public string BookName { get; set; }

@@ -11,7 +11,7 @@ namespace BookResellerStore.Common.Domain
 
     public class User
     {
-        public int UserId { get; set; }
+        public int Id { get; set; }
         public string UserName { get; set; }
         public string PhoneNumner { get; set; }
         public string Address { get; set; }

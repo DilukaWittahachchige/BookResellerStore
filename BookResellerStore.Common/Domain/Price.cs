@@ -8,7 +8,7 @@ namespace BookResellerStore.Common.Domain
 {
     public class Price
     {
-        public int PriceId { get; set; }
+        public int Id { get; set; }
         public double BookPrice { get; set; }
         public double Discount { get; set; }
         public int StoreId { get; set; }

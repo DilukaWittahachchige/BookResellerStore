@@ -9,6 +9,7 @@ namespace BookResellerStoreDataAccess.Db
 {
     public class UnitOfWork : IUnitOfWork
     {
+        private AuthorRepository _authorRepository;
         private BookRepository _bookRepository;
         private OrderRepository _orderRepository;
         private PriceRepository _priceRepository;
@@ -16,8 +17,17 @@ namespace BookResellerStoreDataAccess.Db
         private StoreRepository _storeRepository;
         private UserRepository _userRepository;
 
-        public UnitOfWork( )
+        public UnitOfWork()
         {
+        }
+
+        public IAuthorRepository AuthorRepository
+        {
+            get
+            {
+                return _authorRepository ??
+                    (_authorRepository = new AuthorRepository());
+            }
         }
 
         public IBookRepository BookRepository

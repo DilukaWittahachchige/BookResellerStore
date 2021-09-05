@@ -8,6 +8,7 @@ namespace IBookResellerStoreDataAccess.IRepositories
 {
     public interface IUnitOfWork
     {
+        IAuthorRepository AuthorRepository { get;}
         IBookRepository BookRepository { get; }
         IOrderRepository OrderRepository { get; }
         IPriceRepository PriceRepository { get; }
