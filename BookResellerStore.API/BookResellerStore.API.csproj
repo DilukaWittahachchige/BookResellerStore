@@ -22,8 +22,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BookResellerStore.Common\BookResellerStoreCommon.csproj" />
-    <ProjectReference Include="..\BookResellerStoreDataAccess\BookResellerStoreDataAccess.csproj" />
+    <ProjectReference Include="..\BookResellerStoreDI\BookResellerStoreDI.csproj" />
+    <ProjectReference Include="..\IBookResellerStoreBusinessServices\IBookResellerStoreBusinessServices.csproj" />
   </ItemGroup>
 
 </Project>

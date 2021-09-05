@@ -1,5 +1,4 @@
-using BookResellerStoreCommon.DI;
-using BookResellerStoreDataAccess;
+using BookResellerStoreDI;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;

@@ -1,5 +1,6 @@
 ﻿using BookResellerStoreBusinessServices;
 using BookResellerStoreDataAccess;
+using BookResellerStoreDataAccess.Db;
 using IBookResellerStoreBusinessServices;
 using IBookResellerStoreDataAccess.IRepositories;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,7 +19,7 @@ namespace BookResellerStoreDI
 
             // services.AddTransient<IEmailSender, EmailSender>();
 
-            services.AddSingleton<IBookRepository, BookRepository>();
+            services.AddSingleton<IUnitOfWork, UnitOfWork>();
 
             services.AddScoped<IBookInfoService, BookInfoService>();
 
