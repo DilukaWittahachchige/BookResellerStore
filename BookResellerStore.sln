@@ -21,11 +21,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{3D2BF3BF-D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{411F9AB0-1D6D-4155-B890-938F17429508}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookResellerStoreDataAccess", "BookResellerStoreDataAccess\BookResellerStoreDataAccess.csproj", "{77CD42F1-1BC9-4B1F-8C4A-186E0C41F129}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookResellerStoreDataAccess", "BookResellerStoreDataAccess\BookResellerStoreDataAccess.csproj", "{77CD42F1-1BC9-4B1F-8C4A-186E0C41F129}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBookResellerStoreCommon", "IBookResellerStoreCommon\IBookResellerStoreCommon.csproj", "{B375D541-7263-433F-A34A-B5468E833DFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IBookResellerStoreCommon", "IBookResellerStoreCommon\IBookResellerStoreCommon.csproj", "{B375D541-7263-433F-A34A-B5468E833DFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBookResellerStoreBusinessServices", "IBookResellerStoreBusinessServices\IBookResellerStoreBusinessServices.csproj", "{04624454-A7F3-4E83-BDD4-BAB2F76FBE2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IBookResellerStoreBusinessServices", "IBookResellerStoreBusinessServices\IBookResellerStoreBusinessServices.csproj", "{04624454-A7F3-4E83-BDD4-BAB2F76FBE2A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -15,9 +15,11 @@ namespace BookResellerStore.Common.Domain
         public string UserName { get; set; }
         public string PhoneNumner { get; set; }
         public string Address { get; set; }
-        public int BankAccountNumber { get; set; }
+        public string BankAccountNumber { get; set; }
         public string Role { get; set; }
         public string EmailAddress { get; set; }
+        public bool IsActive { get; set; }
+        public bool IsDeleted { get; set; }
         public int CreatedUserId { get; set; }
         public DateTime CreatedDateTime { get; set; }
         public int LastUpdatedUserId { get; set; }

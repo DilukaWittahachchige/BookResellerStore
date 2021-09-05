@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BookResellerStore.Common.Domain
+namespace BookResellerStoreCommon.Domain
 {
-    public class Stock
+    public class Auther
     {
-        public int StockId { get; set; }
-        public double Quantity { get; set; }
-        public int StoreId { get; set; }
-        public int BookId { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
         public bool IsDeleted { get; set; }
         public int CreatedUserId { get; set; }
         public DateTime CreatedDateTime { get; set; }

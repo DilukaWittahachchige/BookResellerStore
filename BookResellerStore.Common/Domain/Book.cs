@@ -8,10 +8,13 @@ namespace BookResellerStore.Common.Domain
 {
     public class Book
     {
-        public string BookId { get; set; }
+        public int BookId { get; set; }
         public string IsbnCode { get; set; }
-        public string Auther { get; set; }
+        public int AutherId { get; set; }
         public string BookName { get; set; }
+        //If stock empty then this flag auto update to false
+        public bool IsAvailable { get; set; }
+        public bool IsDeleted { get; set; }
         //Default CreatedUserId = 000000(System)
         public int CreatedUserId { get; set; }
         public DateTime CreatedDateTime { get; set; }

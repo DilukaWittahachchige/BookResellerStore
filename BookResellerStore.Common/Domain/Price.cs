@@ -14,6 +14,7 @@ namespace BookResellerStore.Common.Domain
         public int StoreId { get; set; }
         public int BookId { get; set; }
         public string CurrencyCode { get; set; }
+        public bool IsDeleted { get; set; }
         public int CreatedUserId { get; set; }
         public DateTime CreatedDateTime { get; set; }
         public int LastUpdatedUserId { get; set; }

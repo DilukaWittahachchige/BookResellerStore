@@ -12,4 +12,10 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BookResellerStore.DAL\IBookResellerStoreDataAccess.csproj" />
+    <ProjectReference Include="..\BookResellerStoreDataAccess\BookResellerStoreDataAccess.csproj" />
+    <ProjectReference Include="..\IBookResellerStoreBusinessServices\IBookResellerStoreBusinessServices.csproj" />
+  </ItemGroup>
+
 </Project>

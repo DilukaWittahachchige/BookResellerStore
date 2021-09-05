@@ -1,3 +1,4 @@
+using BookResellerStoreDataAccess;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -31,6 +32,9 @@ namespace BookResellerStore
         {
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddMicrosoftIdentityWebApi(Configuration.GetSection("AzureAd"));
+           
+            //DI
+            services.AddScoped<IBookRepository, BookRepository>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
